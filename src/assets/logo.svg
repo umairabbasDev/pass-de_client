@@ -1,0 +1,10 @@
+<svg
+            className="h-6 w-6 text-indigo-500"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#6366f1"
+            
+            color="green"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          ></svg>
