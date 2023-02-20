@@ -8,7 +8,6 @@ function App() {
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
-        textFillColor: 'transparent',
       }} className="text-6xl font-bold absolute top-14 left-1/2 transform -translate-x-1/2 text-white opacity-40 z-10">Pass De</p>
       <div className="row-span-3 row-start-2 row-end-4 w-screen flex justify-center items-center z-0">
         <Background>
