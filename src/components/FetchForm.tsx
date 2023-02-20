@@ -8,11 +8,10 @@ type AddPass = {
   source: string;
 };
 
-const BASE_URL: any = `${
-  import.meta.env.MODE === "production"
-    ? import.meta.env.VITE_BASE_URL
-    : import.meta.env.VITE_BASE_URL_LOCAL
-}api/pass`;
+const BASE_URL: any = `${import.meta.env.MODE === "production"
+  ? import.meta.env.VITE_BASE_URL
+  : import.meta.env.VITE_BASE_URL_LOCAL
+  }api/pass`;
 
 // ********************************** start testing
 // import.meta.env.VITE_BA
@@ -63,14 +62,14 @@ const FetchForm = () => {
   return (
     <div className="flex justify-center items-center w-full h-full flex-col">
       {response && (
-        <div className="block text-lg font-extrabold mb-2   text-gray-900 dark:text-gray-300 ">
+        <div className="block text-lg font-extrabold mb-2 text-gray-900 dark:text-gray-300 ">
           Thanks for using our service
         </div>
       )}
 
       {!consent && (
         <div
-          className="block p-2.5 w-10/12  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="block p-2.5 w-10/12  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-12"
           id=""
         >
           <p className="text-justify">
@@ -93,14 +92,13 @@ const FetchForm = () => {
               htmlFor="consent"
               className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              I agree with the
+              I agree with the {' '}
               <a
                 href="/"
                 className="text-blue-600 dark:text-blue-500 hover:underline"
               >
                 terms and conditions
               </a>
-              .
             </label>
           </div>
         </div>
@@ -150,8 +148,9 @@ const FetchForm = () => {
 
           {!response ? (
             <button
+              style={{ backgroundColor: '#8884fa' }}
               type="submit"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-#8884fa-300 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-#8884fa-600 dark:hover:bg-#8884fa-700 dark:focus:ring-#8884fa-800"
             >
               Submit
             </button>

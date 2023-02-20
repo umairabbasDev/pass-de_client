@@ -16,6 +16,7 @@ const Background = ({ children }: Props) => {
             alt="svg icon"
           />
         </span>
+        <h1 style={{ color: '#8884fa' }} className="text-3xl font-extrabold text-gray-800 text-center mt-2">Password Checker</h1>
       </div>
       <div className="flex justify-center justify-items-center w-full h-full">
         {children}
