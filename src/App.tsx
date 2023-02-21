@@ -6,13 +6,12 @@ function App() {
       <p
         style={{
           fontFamily: "Michroma, sans-serif",
-          backgroundImage:
-            "linear-gradient(to right,  #4F46E5, #6B46C1), linear-gradient(to right, white 0%, transparent 50%)",
+
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}
-        className="text-7xl font-bold absolute top-14 left-1/2 transform -translate-x-1/2 text-white opacity-40 z-10"
+        className="bg-gradient-to-r from-arifPur to-arifVoil text-7xl font-bold absolute top-14 left-1/2 transform -translate-x-1/2 text-white opacity-40 z-10"
       >
         Pass De
       </p>
