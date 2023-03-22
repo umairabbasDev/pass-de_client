@@ -68,5 +68,5 @@ git push origin my-new-feature
 ```
 - Submit a pull request
 
-### License
+## License
 This project is licensed under the MIT License.
