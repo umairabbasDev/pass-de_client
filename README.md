@@ -9,19 +9,17 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ### Password Improvement App
-This is a React app created using Vite and Tailwind CSS. The main function of this app is to help users improve their passwords by generating new passwords, suggesting stronger passwords, and testing the strength of their current passwords.
-
-## Features
-- Password generation
-- Password strength testing
-- Password improvement suggestions
-- User-friendly interface
+This is a React app created using Vite and Tailwind CSS. Main function of this web application is  that to helps users improve their password security. It features a password generator, password strength tester, and suggestions for creating stronger passwords. With the user's consent, the application also collects previous passwords to improve password practices across the community.
 
 
-## Technologies Used
-- React
-- Vite
-- Tailwind CSS
+
+
+## main Todo
+- [x] UI
+- [x] old password collection
+- [ ] password generator 
+- [ ] password strength tester
+
 
 ---
 
