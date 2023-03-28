@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.border-purple {
+  border-color: #8884fa;
+  transition: border-bottom 0.3s ease-in;
+}

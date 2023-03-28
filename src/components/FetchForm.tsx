@@ -69,7 +69,7 @@ const FetchForm = () => {
 
       {!consent && (
         <div
-          className="block p-2.5 w-10/12  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-12"
+          className="block p-2.5 w-10/12  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-6"
           id=""
         >
           <p className="text-justify">
@@ -107,7 +107,7 @@ const FetchForm = () => {
       {consent && (
         <form
           onSubmit={handleSubmit}
-          className="flex items-center justify-center flex-col w-10/12 my-8"
+          className="flex items-center justify-center flex-col w-10/12 mb-8 mt-4"
         >
           <div className="mb-6  w-full">
             <label
