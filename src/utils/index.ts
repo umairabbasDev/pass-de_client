@@ -24,22 +24,22 @@ export function generatePassword(
     password += allChars[randomIndex];
   }
 
-  // Ensure that the password meets certain strength requirements
-  const hasLowercase = /[a-z]/.test(password);
-  const hasUppercase = /[A-Z]/.test(password);
-  const hasNumbers = /[0-9]/.test(password);
-  const hasSymbols = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password);
+  // // Ensure that the password meets certain strength requirements
+  // const hasLowercase = /[a-z]/.test(password);
+  // const hasUppercase = /[A-Z]/.test(password);
+  // const hasNumbers = /[0-9]/.test(password);
+  // const hasSymbols = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password);
 
-  if (!hasLowercase || !hasUppercase || !hasNumbers || !hasSymbols) {
-    const missingChars =
-      (hasLowercase ? "" : "lowercase letters, ") +
-      (hasUppercase ? "" : "uppercase letters, ") +
-      (hasNumbers ? "" : "numbers, ") +
-      (hasSymbols ? "" : "symbols");
-    throw new Error(
-      `Generated password is missing required characters: ${missingChars}`
-    );
-  }
+  // if (!hasLowercase || !hasUppercase || !hasNumbers || !hasSymbols) {
+  //   const missingChars =
+  //     (hasLowercase ? "" : "lowercase letters, ") +
+  //     (hasUppercase ? "" : "uppercase letters, ") +
+  //     (hasNumbers ? "" : "numbers, ") +
+  //     (hasSymbols ? "" : "symbols");
+  //   throw new Error(
+  //     `Generated password is missing required characters: ${missingChars}`
+  //   );
+  // }
 
   return password;
 }

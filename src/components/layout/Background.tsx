@@ -2,12 +2,11 @@ import React from "react";
 
 type Props = {
   children: JSX.Element;
+  setActiveTab: any;
+  activeTab: string;
 };
 
-const Background = ({ children }: Props) => {
-
-  const [activeTab, setActiveTab] = React.useState("tab1");
-
+const Background = ({ children, setActiveTab, activeTab }: Props) => {
   const handleTabClick = (tab: any) => {
     setActiveTab(tab);
   };
@@ -23,9 +22,15 @@ const Background = ({ children }: Props) => {
               alt="svg icon"
             />
           </span>
-          <h1 style={{ color: '#8884fa' }} className="text-3xl font-extrabold text-gray-800 text-center mt-20">
-            {activeTab === "tab1" ?
-              "Password Checker" : activeTab === "tab2" ? "Password Tester" : "Password Generater"}
+          <h1
+            style={{ color: "#8884fa" }}
+            className="text-3xl font-extrabold text-gray-800 text-center mt-20"
+          >
+            {activeTab === "tab1"
+              ? "Password Checker"
+              : activeTab === "tab2"
+              ? "Password Tester"
+              : "Password Generater"}
           </h1>
         </div>
 
@@ -35,28 +40,31 @@ const Background = ({ children }: Props) => {
         >
           <div className="flex justify-center items-center space-x-4">
             <button
-              className={`text-white font-bold text-lg py-2 px-4 rounded ${activeTab === "tab1"
-                ? "border-b-4 border-purple"
-                : "bg-transparent hover:bg-gray-700 hover:text-white"
-                }`}
+              className={`text-white font-bold text-lg py-2 px-4 rounded ${
+                activeTab === "tab1"
+                  ? "border-b-4 border-purple"
+                  : "bg-transparent hover:bg-gray-700 hover:text-white"
+              }`}
               onClick={() => handleTabClick("tab1")}
             >
               Pass Checker
             </button>
             <button
-              className={`text-white font-bold text-lg py-2 px-4 rounded ${activeTab === "tab2"
-                ? "border-b-4 border-purple"
-                : "bg-transparent hover:bg-gray-700 hover:text-white"
-                }`}
+              className={`text-white font-bold text-lg py-2 px-4 rounded ${
+                activeTab === "tab2"
+                  ? "border-b-4 border-purple"
+                  : "bg-transparent hover:bg-gray-700 hover:text-white"
+              }`}
               onClick={() => handleTabClick("tab2")}
             >
               Pass Tester
             </button>
             <button
-              className={`text-white font-bold text-lg py-2 px-4 rounded ${activeTab === "tab3"
-                ? "border-b-4 border-purple"
-                : "bg-transparent hover:bg-gray-700 hover:text-white"
-                }`}
+              className={`text-white font-bold text-lg py-2 px-4 rounded ${
+                activeTab === "tab3"
+                  ? "border-b-4 border-purple"
+                  : "bg-transparent hover:bg-gray-700 hover:text-white"
+              }`}
               onClick={() => handleTabClick("tab3")}
             >
               Pass Generator
