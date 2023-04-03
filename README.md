@@ -17,7 +17,7 @@ This is a React app created using Vite and Tailwind CSS. Main function of this w
 ## main Todo
 - [x] UI
 - [x] old password collection
-- [ ] password generator 
+- [ ] password generator(in progress) 
 - [ ] password strength tester
 
 
