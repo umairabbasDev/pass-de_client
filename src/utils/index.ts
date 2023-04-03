@@ -1,4 +1,4 @@
-export function generatePassword(
+function generatePassword(
   length: number = 12,
   includeUppercase: boolean = true,
   includeNumbers: boolean = true,
@@ -43,3 +43,30 @@ export function generatePassword(
 
   return password;
 }
+
+/**
+ * Copies a given value to the clipboard and displays a success message.
+ * @param value The value that needs to be copied.
+ * @param successMsg The message to display upon successful copying. Defaults to "Copied to clipboard!".
+ * @param errorMsg The message to display upon encountering an error. Defaults to "Failed to copy to clipboard.".
+ */
+function copyToClipboard(
+  value: string,
+  successMsg: string = "Copied to clipboard!",
+  errorMsg: string = "Failed to copy to clipboard."
+) {
+  // Attempt to copy the value to the clipboard.
+  navigator.clipboard
+    .writeText(value)
+    .then(() => {
+      // If successful, display the success message.
+      alert(successMsg);
+    })
+    .catch((error) => {
+      // If an error occurs, display the error message.
+      alert(errorMsg);
+      console.error(error);
+    });
+}
+
+export { copyToClipboard, generatePassword };

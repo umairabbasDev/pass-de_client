@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { generatePassword } from "../../utils";
+import { copyToClipboard, generatePassword } from "../../utils";
 
 function PasswordGenerator() {
   const [password, setPassword] = useState<string>("");
@@ -23,7 +23,7 @@ function PasswordGenerator() {
   }
 
   function handleCopyPassword() {
-    navigator.clipboard.writeText(password as string);
+    copyToClipboard(password);
   }
 
   return (
