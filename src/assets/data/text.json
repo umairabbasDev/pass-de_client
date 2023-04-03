@@ -1,0 +1,6 @@
+{
+  "text": {
+    "main": "The Password Checker is a simple program that checks the strength of your password by comparing it to a list of common passwords and known vulnerabilities. It can also assess the security of your online accounts and notify you of potential risks. In addition, you can contribute to the community's security by sharing your old passwords with the program",
+    "archive": "Password checker is a simple program that checks for the strength of your password by running through a list of websites and sending the results to you. It will also tell you if there are any vulnerabilities in your online security, if it's secure enough for you to use.you can also use old password to help community."
+  }
+}

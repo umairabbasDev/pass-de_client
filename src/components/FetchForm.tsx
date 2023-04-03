@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import config from "../config";
 
 type AddPass = {
   msg: any;
@@ -8,10 +9,11 @@ type AddPass = {
   source: string;
 };
 
-const BASE_URL: any = `${import.meta.env.MODE === "production"
-  ? import.meta.env.VITE_BASE_URL
-  : import.meta.env.VITE_BASE_URL_LOCAL
-  }api/pass`;
+const BASE_URL: any = `${
+  import.meta.env.MODE === "production"
+    ? import.meta.env.VITE_BASE_URL
+    : import.meta.env.VITE_BASE_URL_LOCAL
+}api/pass`;
 
 // ********************************** start testing
 // import.meta.env.VITE_BA
@@ -72,13 +74,7 @@ const FetchForm = () => {
           className="block p-2.5 w-10/12  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-6"
           id=""
         >
-          <p className="text-justify">
-            Password checker is a simple program that checks for the strength of
-            your password by running through a list of websites and sending the
-            results to you. It will also tell you if there are any
-            vulnerabilities in your online security, if it's secure enough for
-            you to use.you can also use old password to help community.
-          </p>
+          <p className="text-justify">{config.home.description.text}</p>
 
           <div className="flex items-center mt-8">
             <input
@@ -92,7 +88,7 @@ const FetchForm = () => {
               htmlFor="consent"
               className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              I agree with the {' '}
+              I agree with the{" "}
               <a
                 href="/"
                 className="text-blue-600 dark:text-blue-500 hover:underline"
@@ -148,7 +144,7 @@ const FetchForm = () => {
 
           {!response ? (
             <button
-              style={{ backgroundColor: '#8884fa' }}
+              style={{ backgroundColor: "#8884fa" }}
               type="submit"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-#8884fa-300 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-#8884fa-600 dark:hover:bg-#8884fa-700 dark:focus:ring-#8884fa-800"
             >
